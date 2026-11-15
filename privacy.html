@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="How Dusk handles page appearance and preferences locally in your browser.">
+<title>Privacy policy · Dusk</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+<nav><a href="./">Dusk</a><a href="#ru" lang="ru">По-русски</a></nav>
+<h1>Privacy policy</h1>
+<p class="muted">Effective November 15, 2026 · Dusk 0.2.0</p>
+<p class="lead">Dusk changes the appearance of web pages to a dark palette. Its page processing and preferences stay in your browser. The extension does not send them to the developer or to third parties.</p>
+<h2>What Dusk handles</h2>
+<p>To change page appearance, Dusk inspects page elements, computed styles, colors and layout, including embedded frames and web components. It temporarily keeps references to elements and their original styles in memory so it can restore them when you turn Dusk off. It does not save copies of page content or take screenshots.</p>
+<p>When you open the popup, Dusk reads the active tab’s URL to identify the site and show its controls. On pages, it uses the hostname to apply your site preference. It does not keep a browsing history, visit timestamps, full URLs, query strings or page titles.</p>
+<p>Dusk responds to page changes, pointer and keyboard events, focus changes, input events and resizing to update colors. It does not record keystrokes, text entered into forms, pointer coordinates or an interaction history. It does not read password values, cookies or authentication tokens.</p>
+<p>Dusk reads the browser’s preferred interface language and the system light/dark preference. These are used locally to choose the interface language and follow the system theme.</p>
+<h2>What is stored</h2>
+<p>Dusk uses <code>chrome.storage.local</code> to store your global mode (System, On or Off) and explicit site exceptions. Each exception contains a hostname and an on/off choice. Local files share a single <code>local-file</code> preference; file paths are not saved. These settings are not sent to a Dusk account or server and do not use Chrome’s synchronized storage.</p>
+<p>Preferences remain in the browser profile until you change or remove them. Choosing Default for a site removes that site’s exception. Uninstalling Dusk removes its extension storage from that profile. Temporary page state is released when the page or tab is closed. Browser or device backups are controlled by your browser and operating system.</p>
+<h2>Why these permissions are needed</h2>
+<ul>
+<li><strong>Page access:</strong> Dusk’s bundled scripts run on HTTP and HTTPS pages, including frames, so dark appearance can apply automatically as pages load. Local file access works only if you enable it in the browser’s extension settings.</li>
+<li><strong>Storage:</strong> remembers your mode and site exceptions locally.</li>
+<li><strong>Active tab:</strong> identifies the current site when you open Dusk’s popup, so you can control that site.</li>
+</ul>
+<p>You can restrict Dusk’s site access, disable it or uninstall it through your browser’s extension settings. Browser-protected pages cannot be recolored.</p>
+<h2>No analytics, advertising or remote code</h2>
+<p>Dusk has no analytics, telemetry, advertising SDKs, remote scripts or developer-operated backend. Its code is included in the extension package. It makes no network requests to transmit page data or settings. It does not sell, share or use this data for advertising, profiling, credit decisions or lending. The developer cannot remotely view your pages or preferences.</p>
+<h2>Limited Use</h2>
+<p>Dusk’s use of information received from browser and Google APIs adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements. Information is used only to provide Dusk’s dark appearance and its user-facing controls.</p>
+<h2>This website and support</h2>
+<p>This policy website has no analytics, tracking scripts, forms or external fonts. It is hosted on GitHub Pages. GitHub may process technical request information, including IP addresses, under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. Visiting this website is separate from using the extension; Dusk does not automatically contact it.</p>
+<p>You can contact the maintainer through the <a href="https://github.com/solo-s">solo-s GitHub profile</a>. Information you choose to submit on GitHub is handled by GitHub and may be public. Do not include passwords, private page content or other sensitive information in public reports.</p>
+<h2>Changes</h2>
+<p>This policy describes Dusk 0.2.0. If its data handling changes, this policy and the store disclosures will be updated. The effective date appears above.</p>
+<hr>
+<section id="ru" lang="ru">
+<h1>Политика конфиденциальности</h1>
+<p class="muted">Действует с 15 ноября 2026 года · Dusk 0.2.0</p>
+<p class="lead">Dusk меняет оформление веб-страниц на тёмное. Обработка страниц и настройки остаются в браузере. Расширение не передаёт их разработчику или третьим лицам.</p>
+<h2>Какие данные обрабатываются</h2>
+<p>Для изменения оформления Dusk анализирует элементы страницы, вычисленные стили, цвета и размеры, включая вложенные фреймы и веб-компоненты. Ссылки на элементы и исходные стили временно хранятся в памяти, чтобы восстановить оформление после выключения. Копии содержимого страниц не сохраняются, скриншоты не создаются.</p>
+<p>При открытии панели Dusk читает URL активной вкладки, чтобы определить сайт и показать его настройки. На страницах используется имя хоста. Расширение не ведёт историю посещений и не сохраняет время посещения, полные URL, параметры адреса или заголовки страниц.</p>
+<p>Dusk реагирует на изменения страницы, события мыши и клавиатуры, смену фокуса, ввод в поля и изменение размеров, чтобы обновлять цвета. Нажатые клавиши, введённый текст, координаты указателя и история действий не записываются. Значения паролей, cookies и токены авторизации не читаются.</p>
+<p>Язык интерфейса браузера и системная светлая или тёмная тема используются локально для выбора языка панели и режима «Система».</p>
+<h2>Что сохраняется</h2>
+<p>В <code>chrome.storage.local</code> сохраняются общий режим («Система», «Вкл.» или «Выкл.») и явно заданные исключения для сайтов: имя хоста и выбор включения или выключения. Для локальных файлов используется одна настройка <code>local-file</code>; пути файлов не сохраняются. Настройки не передаются в аккаунт или на сервер Dusk и не используют синхронизируемое хранилище Chrome.</p>
+<p>Настройки остаются в профиле браузера, пока вы их не измените или не удалите. Выбор «Как везде» удаляет исключение для текущего сайта. Удаление Dusk удаляет его хранилище из этого профиля. Временные данные страницы освобождаются при её закрытии. Резервными копиями браузера и устройства управляют сам браузер и операционная система.</p>
+<h2>Для чего нужны разрешения</h2>
+<ul>
+<li><strong>Доступ к страницам:</strong> встроенные в расширение скрипты работают на HTTP- и HTTPS-страницах, включая фреймы, чтобы автоматически применять оформление при загрузке. Доступ к локальным файлам работает только после вашего включения в настройках расширения.</li>
+<li><strong>Хранилище:</strong> запоминает режим и исключения локально.</li>
+<li><strong>Активная вкладка:</strong> позволяет определить текущий сайт при открытии панели Dusk и управлять его режимом.</li>
+</ul>
+<p>В настройках расширений браузера можно ограничить доступ Dusk к сайтам, отключить или удалить его. Защищённые страницы браузера перекрашивать нельзя.</p>
+<h2>Без аналитики и удалённого кода</h2>
+<p>В Dusk нет аналитики, телеметрии, рекламных SDK, удалённых скриптов или сервера разработчика. Код поставляется в составе расширения. Dusk не выполняет сетевые запросы для передачи данных страниц или настроек, не продаёт и не передаёт эти данные и не использует их для рекламы, профилирования или кредитных решений. Разработчик не может удалённо просматривать ваши страницы или настройки.</p>
+<h2>Ограниченное использование</h2>
+<p>Использование Dusk информации из API браузера и Google соответствует Chrome Web Store User Data Policy, включая требования Limited Use. Данные используются исключительно для тёмного оформления и его пользовательских настроек.</p>
+<h2>Этот сайт и поддержка</h2>
+<p>На сайте политики нет аналитики, отслеживающих скриптов, форм и внешних шрифтов. Он размещён на GitHub Pages. GitHub может обрабатывать технические сведения о запросах, включая IP-адреса, согласно своей <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">политике конфиденциальности</a>. Посещение этого сайта отдельно от работы расширения: Dusk не обращается к нему автоматически.</p>
+<p>Связаться с автором можно через <a href="https://github.com/solo-s">профиль solo-s на GitHub</a>. Добровольно отправленные через GitHub сведения обрабатываются GitHub и могут быть публичными. Не публикуйте пароли, содержимое приватных страниц и другую чувствительную информацию в открытых обращениях.</p>
+<h2>Изменения политики</h2>
+<p>Политика описывает Dusk 0.2.0. При изменении обработки данных политика и сведения в магазине будут обновлены. Дата начала действия указана выше.</p>
+</section>
+<footer><a href="./">Dusk</a></footer>
+</main></body></html>
